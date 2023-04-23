@@ -3,10 +3,10 @@ const app = express();
 
 const port = 8081;
 
-app.get('/', function (req, res) {
-    res.send('Hello World');
-});
+app.use('/', require('./routes'));
 
-var server = app.listen(port, function () {
+app.listen(port, function () {
     console.log(`Listening on ${port}`);
 });
+
+
