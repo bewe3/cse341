@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const mongodb = require('./db/connect.js');
 
 const port = 8081;
 
