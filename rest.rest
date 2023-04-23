@@ -1,1 +1,1 @@
-GET https://cse341-test.onrender.com/contacts
+GET https://cse341.onrender.com/
