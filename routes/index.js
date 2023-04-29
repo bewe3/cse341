@@ -1,7 +1,12 @@
-const routes = require('express').Router();
+const express = require('express');
+const router = express.Router();
 
-const myController = require('../controllers');
+router.get('/contacts', (req, res) => {
+  // Code to retrieve contact info from JSON file
+  const contacts = require('./contacts.json');
 
-routes.get('/', myController.awesomeFunction);
+  // Return contact info to the client
+  res.json(contacts);
+});
 
-module.exports = routes;
+module.exports = router;
