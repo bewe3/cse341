@@ -1,12 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const controller = require('../controllers');
 
-router.get('/contacts', (req, res) => {
-  // Code to retrieve contact info from JSON file
-  const contacts = require('./contacts.json');
-
-  // Return contact info to the client
-  res.json(contacts);
-});
+router.get('/', controller.getData);
 
 module.exports = router;
