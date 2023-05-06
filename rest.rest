@@ -1,3 +1,72 @@
 GET http://localhost:8080 HTTP/1.1
 ###
 GET https://spring2023.onrender.com HTTP/1.1
+
+
+// Local
+###
+GET http://localhost:8080/contact HTTP/1.1
+
+### 
+GET http://localhost:8080/contact/644d61c2e3dad2be928a5d42 HTTP/1.1
+
+###
+POST http://localhost:8080/contact HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Tristan", 
+    "lastName":"Johnson", 
+    "email":"tristan.johnson@test.com", 
+    "favoriteColor":"Maroon", 
+    "birthday":"05/06/2023"
+}
+
+### 
+PUT http://localhost:8080/contact/6220bcb39cd507e920c75a0b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Tristan", 
+    "lastName":"Johnson", 
+    "email":"tristan.johnson@test.com", 
+    "favoriteColor":"Maroon", 
+    "birthday":"05/06/2023"
+}
+
+###
+DELETE http://localhost:8080/contact/6220b775099269ff7b31ceab HTTP/1.1
+
+###
+GET https://spring2023.onrender.com/contacts
+
+// Render
+### 
+GET https://spring2023.onrender.com/contacts/622023f642f9ab4cd6e060b3
+
+###
+POST https://spring2023.onrender.com/contact HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Tristan", 
+    "lastName":"Johnson", 
+    "email":"tristan.johnson@test.com", 
+    "favoriteColor":"Maroon", 
+    "birthday":"05/06/2023"
+}
+
+### 
+PUT https://spring2023.onrender.com/contact/6220bcb39cd507e920c75a0b HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Tristan", 
+    "lastName":"Johnson", 
+    "email":"tristan.johnson@test.com", 
+    "favoriteColor":"Maroon", 
+    "birthday":"05/06/2023"
+}
+
+###
+DELETE https://spring2023.onrender.com/contact/6220e34083149913680f9a64 HTTP/1.1
