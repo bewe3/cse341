@@ -1,3 +1,6 @@
+GET http://localhost:8080 HTTP/1.1
+
+###
 GET http://localhost:8081 HTTP/1.1
 ###
 GET https://spring2023.onrender.com HTTP/1.1
