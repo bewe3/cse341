@@ -65,7 +65,7 @@ content-type: application/json
     "lastName":"Johnson", 
     "email":"tristan.johnson@test.com", 
     "favoriteColor":"Purple", 
-    "birthday":"05/06/2023"
+    "birthday":"01/01/2001"
 }
 
 ###
