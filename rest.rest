@@ -39,10 +39,13 @@ DELETE http://localhost:8080/contact/6456eb13f190430926f4e4f3 HTTP/1.1
 
 // Render
 ###
-GET https://spring2023.onrender.com/contact/contact HTTP/1.1
+GET https://spring2023.onrender.com/contact HTTP/1.1
 
 ###
-POST https://spring2023.onrender.com/contact/contact HTTP/1.1
+GET https://spring2023.onrender.com/contact/644d60cae3dad2be928a5d41 HTTP/1.1
+
+###
+POST https://spring2023.onrender.com/contact HTTP/1.1
 content-type: application/json
 
 {
@@ -54,7 +57,7 @@ content-type: application/json
 }
 
 ### 
-PUT https://spring2023.onrender.com/contact/contact/6456e96a5309ef355cc3e5b7 HTTP/1.1
+PUT https://spring2023.onrender.com/contact/6456e96a5309ef355cc3e5b7 HTTP/1.1
 content-type: application/json
 
 {
@@ -66,4 +69,4 @@ content-type: application/json
 }
 
 ###
-DELETE https://spring2023.onrender.com/contact/contact/6456eb725309ef355cc3e5c3 HTTP/1.1
+DELETE https://spring2023.onrender.com/contact/6456f10e3943858534acf016 HTTP/1.1
